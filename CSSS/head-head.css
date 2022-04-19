@@ -1,0 +1,115 @@
+/* 
+*此样式表用作导航栏布局
+*请勿写入其他内容
+*创建时间2022年4月19日
+*版本:1.0
+*创建人：简同学
+*/
+
+
+/* 
+*整个导航栏属性
+*时间2022年4月19日
+*版本1.0
+*创建人：简同学
+*/
+#head-head{  /* 导航栏背景 */
+    height: 100px;
+    background-color: aqua;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+/* 
+*导航栏左侧图标样式
+*时间2022年4月19日
+*版本1.0
+*创建人：简同学
+*/
+#head-head-icon-left{ /* 导航栏左侧图标 */
+    float: left;
+}
+
+
+/* 
+*导航栏中间导航样式
+*时间2022年4月19日
+*版本1.0
+*创建人：简同学
+*/
+#head-head-div-mid{
+    width: 500px;
+    height: 75px;
+    float: left;
+}
+
+#head-head-div-mid ul li{
+    list-style: none;
+    float: left;
+    margin: 10px;
+}
+
+#head-head-div-mid ul li a{
+    display: block;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    color: white;
+    font-size: 4ex;
+}
+
+#head-head-div-mid ul li a:link{
+    text-decoration: none;
+}
+#head-head-div-mid ul li a:hover{
+    text-decoration: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+#head-head-div-mid ul li a:visited{
+    text-decoration: none;
+}
+#head-head-div-mid ul li a:active{
+    text-decoration: none;
+}
+
+
+/* 
+*导航按钮被选中样式
+*时间2022年4月19日
+*版本1.0
+*创建人：简同学
+*/
+.Check{
+    border-bottom: 4px solid black;
+    border-radius: 35px;
+}
+
+
+
+
+/* 
+*导航栏右侧按钮样式
+*时间2022年4月19日
+*版本1.0
+*创建人：简同学
+*/
+#head-head-a-right{ /* 导航栏右侧按钮 */
+    float: right;
+    display: block;
+    height: 100px;
+    width: 150px;
+    background-image: url(../images/ppp.png);
+}
+
+
+/* 
+*导航栏右侧按钮被点击样式
+*时间2022年4月19日
+*版本1.0
+*创建人：简同学
+*/
+#head-head-a-right:hover{
+    background-color: yellow;
+}

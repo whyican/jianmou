@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Keywords" content="简同学">
+    <meta name="Description" content="某初中生的个人主页">
+    <link rel="shortcut icon" href="images/head.ico">
+    <title>简同学主站</title>
+    <!-- 导航栏的样式表 -->
+    <link rel="stylesheet" href="CSSS/head-head.css">
+    <style>
+        *{
+        margin: 0px;
+        padding: 0px;
+    }
+    </style>
+    <!-- 导入常用函数 -->
+    <script text="text/javascript" src="JSS/functions.js"></script>
 </head>
 <body>
-    <h1>嘿嘿，这个域名我征用啦！</h1>
-    <h2>test</h2>
+    <!-- 导航栏和h1 -->
+
+    <!-- h1 -->
+    <!-- css样式，绝对定位直接给他推出去 -->
+    <h1 style="position: absolute;top: -9999px;">简同学主站</h1>
+
+    <!-- 导航栏 -->
+    <div id="head-head">
+        <!-- 图标导航栏 -->
+        <div id="head-head-icon-left">
+            <img src="images/head-icon.png" alt="icon" id="musticon">
+            <img src="images/head-text.png" alt="head-text" id="nomusticon">
+        </div>
+        
+        <!-- 真正的导航 -->
+        <div id="head-head-div-mid">
+            <ul>
+                <li><a href="" id="dh1">首页</a></li>
+                <li><a href="" id="dh2">教程</a></li>
+                <li><a href="" id="dh3">新闻</a></li>
+                <li><a href="" id="dh4">关于</a></li>
+            </ul>
+        </div>
+
+        <!-- 导航尾部 -->
+        <a href="" id="head-head-a-right"></a>
+        <!-- 导航栏的js -->
+        <script text="text/javascript" src="JSS/head-head.js"></script>
+    </div>
+
+
 </body>
 </html>
