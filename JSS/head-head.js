@@ -71,23 +71,12 @@ Hhead.PlaceOfPlace = function(HheadInPlacemustplace){
 Hhead.ChangePlace = function(ChangepPlacee){
     place = ChangepPlacee;
     Hhead.PlaceOfPlace(ChangepPlacee);
+    PickDifferentType();
     var i = 3;
     return function(n){
         n+i++;
     };
 };
-
-
-/* 
-*定义记录客户所在页面的变量！！！！！！！！！！！！！！！！！
-*页面中0是首页1是教程2是新闻3是关于
-*默认在首页
-*时间2022年4月19日
-*版本1.0
-*创建人：简同学
-*/
-
-var place = 0;
 
 
 /* 初始化页面导航
@@ -119,7 +108,46 @@ window.onresize = PlaceOfAll.HeadHead;
 *版本1.0
 *创建人：简同学
 */
-var regetdiv = document.getElementById("dh1").href="javascript:Hhead.ChangePlace(0);";
-var regetdiv = document.getElementById("dh2").href="javascript:Hhead.ChangePlace(1);";
-var regetdiv = document.getElementById("dh3").href="javascript:Hhead.ChangePlace(2);";
-var regetdiv = document.getElementById("dh4").href="javascript:Hhead.ChangePlace(3);";
+document.getElementById("dh1").href="javascript:Hhead.ChangePlace(0);";
+document.getElementById("dh2").href="javascript:Hhead.ChangePlace(1);";
+document.getElementById("dh3").href="javascript:Hhead.ChangePlace(2);";
+document.getElementById("dh4").href="javascript:Hhead.ChangePlace(3);";
+
+/* 
+*以下为导航栏右侧小按钮被点击效果
+*时间2022年4月20日
+*版本1.0
+*创建人：简同学
+*/
+var rigttent = document.getElementById("head-head-a-right");
+rigttent.onclick = function(){
+    var rigttent_r = document.getElementById("head-head-right-a-used");
+    var width = document.body.clientWidth;
+    var OtherUseWidth = document.body.clientWidth;
+    if(window.HeadRightA ==false){
+        var usestop = setInterval(function(){
+            if(OtherUseWidth<=(width-160)){
+                usestop = window.clearInterval(usestop);
+            }else{
+                OtherUseWidth = OtherUseWidth-20;
+                rigttent_r.style = "position: absolute;top: 86px;left: "+OtherUseWidth+"px;";
+            };
+
+        },5);
+        
+        HeadRightA = true;
+    }else{
+        OtherUseWidth = OtherUseWidth -160
+        var usestop = setInterval(function(){
+            if(OtherUseWidth>=width){
+                rigttent_r.style = "position: absolute;top: 86px;left: "+width+"px;";
+                usestop = window.clearInterval(usestop);
+            }else{
+                OtherUseWidth = OtherUseWidth+20;
+                rigttent_r.style = "position: absolute;top: 86px;left: "+OtherUseWidth+"px;";
+            };
+
+        },5);
+        HeadRightA = false;
+    };
+};

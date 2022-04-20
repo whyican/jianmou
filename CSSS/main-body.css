@@ -1,0 +1,21 @@
+/* 
+*此样式表用于布局导航页
+*时间2022年4月20日
+*版本1.0
+*创建人：简同学
+*/
+#mainbody{
+    position: absolute;
+    top: 85px;
+}
+#shouye{
+}
+#jiaocheng{
+}
+#xiazai{
+}
+#xinwen{
+}
+#mainbody div{
+    float: left;
+}

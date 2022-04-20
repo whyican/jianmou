@@ -14,11 +14,13 @@
 *创建人：简同学
 */
 #head-head{  /* 导航栏背景 */
-    height: 100px;
-    background-color: aqua;
+    height: 80px;
+    background-color: white;
     position: fixed;
     top: 0px;
     left: 0px;
+    border-bottom: 3px solid black;
+    z-index: 3;
 }
 
 /* 
@@ -29,8 +31,24 @@
 */
 #head-head-icon-left{ /* 导航栏左侧图标 */
     float: left;
+    height: 80px;
+    width: 400px;
+}
+#musticon{
+    height: 80px;
+    width: 80px;
+    float: left;
 }
 
+#nomusticon{
+    width: 320px;
+    float: left;
+}
+
+#nomusticon2{
+    width: 0px;
+    float: left;
+}
 
 /* 
 *导航栏中间导航样式
@@ -39,23 +57,24 @@
 *创建人：简同学
 */
 #head-head-div-mid{
-    width: 500px;
-    height: 75px;
+    width: 370px;
+    height: 80px;
     float: left;
 }
 
 #head-head-div-mid ul li{
     list-style: none;
     float: left;
-    margin: 10px;
+    margin: 0px 5px;
 }
 
 #head-head-div-mid ul li a{
     display: block;
-    width: 100px;
-    height: 45px;
+    width: 80px;
+    height: 68px;
     text-align: center;
-    color: white;
+    line-height: 50px;
+    color: black;
     font-size: 4ex;
 }
 
@@ -64,8 +83,7 @@
 }
 #head-head-div-mid ul li a:hover{
     text-decoration: none;
-    background-color: yellow;
-    border-radius: 10px;
+    background-color: beige;
 }
 #head-head-div-mid ul li a:visited{
     text-decoration: none;
@@ -82,8 +100,7 @@
 *创建人：简同学
 */
 .Check{
-    border-bottom: 4px solid black;
-    border-radius: 35px;
+    border-bottom: 12px solid red;
 }
 
 
@@ -98,18 +115,60 @@
 #head-head-a-right{ /* 导航栏右侧按钮 */
     float: right;
     display: block;
-    height: 100px;
+    height: 80px;
     width: 150px;
     background-image: url(../images/ppp.png);
 }
 
 
 /* 
-*导航栏右侧按钮被点击样式
+*导航栏右侧按钮鼠标悬浮样式
 *时间2022年4月19日
 *版本1.0
 *创建人：简同学
 */
 #head-head-a-right:hover{
-    background-color: yellow;
+    background-color: beige;
+}
+
+
+/* 
+*导航栏右侧按钮下拉栏
+*时间2022年4月20日
+*版本1.0
+*创建人：简同学
+*/
+#head-head-right-a-used{
+    background-color: white;
+    width: 150px;
+    height: 128px;
+    border: 3px solid black;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    border-radius: 15px;
+}
+#head-head-right-a-used ul li{
+    list-style: none;
+}
+#head-head-right-a-used ul li a{
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+    color: black;
+    font-size: 2ex;
+}
+#head-head-right-a-used ul li a:link{
+    text-decoration: none;
+}
+#head-head-right-a-used ul li a:visited{
+    text-decoration: none;
+}
+#head-head-right-a-used ul li a:hover{
+    text-decoration: none;
+    background-color: beige;;
+    border-radius: 15px;
+}
+#head-head-right-a-used ul li a::shadow{
+    text-decoration: none;
 }

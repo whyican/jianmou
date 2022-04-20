@@ -8,6 +8,8 @@
     <title>简同学主站</title>
     <!-- 导航栏的样式表 -->
     <link rel="stylesheet" href="CSSS/head-head.css">
+    <!-- 导航页的样式表 -->
+    <link rel="stylesheet" href="CSSS/main-body.css">
     <style>
         *{
         margin: 0px;
@@ -17,7 +19,7 @@
     <!-- 导入常用函数 -->
     <script text="text/javascript" src="JSS/functions.js"></script>
 </head>
-<body>
+<body style="background-image: url(images/th.jpg);overflow: hidden;">
     <!-- 导航栏和h1 -->
 
     <!-- h1 -->
@@ -35,19 +37,48 @@
         <!-- 真正的导航 -->
         <div id="head-head-div-mid">
             <ul>
-                <li><a href="" id="dh1">首页</a></li>
-                <li><a href="" id="dh2">教程</a></li>
-                <li><a href="" id="dh3">新闻</a></li>
-                <li><a href="" id="dh4">关于</a></li>
+                <li><a href="#" id="dh1">首页</a></li>
+                <li><a href="#" id="dh2">教程</a></li>
+                <li><a href="#" id="dh3">新闻</a></li>
+                <li><a href="#" id="dh4">下载</a></li>
             </ul>
         </div>
 
         <!-- 导航尾部 -->
-        <a href="" id="head-head-a-right"></a>
+        <a href="#" id="head-head-a-right"></a>
+        <!-- 导航右侧的小三角的对话框 -->
+
+        <div id="head-head-right-a-used">
+            <ul>
+                <li><a href="HTMLS/About.html">关于作者</a></li>
+                <li><a href="HTMLS/Call.html">联系站长</a></li>
+                <li><a href="HTMLS/Jian.html">个人感悟</a></li>
+            </ul>
+        </div>
+
         <!-- 导航栏的js -->
         <script text="text/javascript" src="JSS/head-head.js"></script>
     </div>
+        <!-- 导航页 -->
+    <div id="mainbody">
+        <div id="shouye">
 
+        </div>
+        
+        <div id="jiaocheng">
+
+        </div>
+        
+        <div id="xinwen">
+
+        </div>
+        
+        <div id="xiazai">
+
+        </div>
+        <!-- 导航页的js -->
+        <script text="text/javascript" src="JSS/MainBodyForFour.js"></script>
+    </div>
 
 </body>
 </html>
